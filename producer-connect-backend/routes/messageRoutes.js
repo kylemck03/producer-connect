@@ -47,4 +47,8 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
+router.get('/api/message', (req, res) => {
+    res.json({message: 'Welcome to ProducerConnect'})
+});
+
 module.exports = router;
